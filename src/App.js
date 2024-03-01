@@ -23,6 +23,7 @@ function App() {
         });
       }, secs * 1000);
     } else {
+      clearInterval(timerId);
       clearInterval(id);
     }
     return () => {
